@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    display: flex;
+    border: 2px solid red;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* First container items */
+.item-1, .item-2, .item-3, .item-4 {
+    border: 1px solid blue;
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.item-1 {
+    background-color: lightyellow;
+}
+.item-2 {
+    background-color: lightgreen;
+}
+.item-3 {
+    background-color: lightblue;
+}
+.item-4 {
+    background-color: lightgray;
+}
+
+
+
+/* Second container styles */
+.container:nth-of-type(2) {
+    border: 2px solid purple;
+}
+
+.item {
+    border: 1px solid orange;
+    padding: 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.item-home {
+    background-color: lightcoral;
+}
+.item-about {
+    background-color: lightseagreen;
+}   
+.item-service {
+    background-color: rgb(209, 182, 255);
+}
+.item-contact {
+    background-color: rgb(255, 204, 182);
+}
+
+.navbar {
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: black;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.nav-links li {
+    flex-grow: 1;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.nav-links a:hover {
+    background-color: #b9f908;
+}
+.footer {
+    margin: 40PX;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+.icons{
+    border:10px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.icons i{
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.icons i:hover{
+    transform: scale(1.2);
+}
+
+
+.fa-facebook {
+    margin: 10px;
+    font-size: 24px;
+    color: rgb(44, 44, 201);
+}
+.fa-twitter {
+    margin: 10px;
+    font-size: 24px;
+    color: deepskyblue;
+}
+.fa-instagram {
+    margin: 10px;
+    font-size: 24px;
+    color: rgb(255, 18, 113);
+}
+.fa-youtube {
+    margin: 10px;
+    font-size: 24px;
+    color: rgb(239, 14, 14);
+}
