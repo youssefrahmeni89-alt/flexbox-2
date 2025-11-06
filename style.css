@@ -2,6 +2,28 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+div:has(> img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 20px solid green;
+    background-color: #010000;
+}
+img {
+    max-width: 50%;
+    height: auto;
+}
+p {
+    flex: 1;
+    line-height: 1.6;
+    color: #fff;
 }
 
 
@@ -13,7 +35,6 @@
     margin: 20px auto;
 }
 
-/* First container items */
 .item-1, .item-2, .item-3, .item-4 {
     border: 1px solid blue;
     padding: 10px;
@@ -36,7 +57,7 @@
 
 
 
-/* Second container styles */
+
 .container:nth-of-type(2) {
     border: 2px solid purple;
 }
@@ -98,6 +119,7 @@
     display: flex;
     justify-content: center;
 }
+
 .icons{
     border:10px solid black;
     background-color: black;
@@ -134,3 +156,89 @@
     font-size: 24px;
     color: rgb(239, 14, 14);
 }
+.feet{
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px;
+    list-style: none;
+}
+.fa-playstation{
+    color: blue;
+}
+.fa-xbox{
+    color: green;
+}
+.fa-apple{
+    color: rgb(105, 103, 105);
+}
+.fa-xbox {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.fa-apple {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.fa-playstation {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.fa-playstation:hover {
+    transform: scale(1.2);
+}
+.fa-xbox:hover {
+    transform: scale(1.2);
+}
+.fa-apple:hover {
+    transform: scale(1.2);
+}
+
+.img{
+    width: 100%;
+    height: auto;  
+}
+
+.price{ 
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(253, 253, 253);
+    padding: 5px;
+    border: 2px solid white;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    color: olivedrab;
+}
+.limited{
+    border: 2px;
+    color: olivedrab;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+     color: white;
+    background-color: rgb(253, 253, 253);
+    color: olivedrab;  
+}
+.price:hover {
+    transform: scale(1.1);
+}
+.limited:hover {
+    transform: scale(1.1);
+}
+
+
